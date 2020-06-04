@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Madhya Pradesh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="G:/webdev/mystyle3.css">
+</head>
+<body>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="https://www.holidify.com/pages/food-of-madhya-pradesh-1646.html">Food</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">places to visit
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="http://www.mptourism.com/tourist-places/ujjain-temples.html">Ujjain</a>
+    <a href="http://www.mptourism.com/tourist-places/places-to-visit-in-bhopal.html">Bhopal</a>
+    <a href="http://www.mptourism.com/tourist-places/sanchi-stupa.html">Sanchi</a>
+<a href="http://www.mptourism.com/tourist-places/places-to-visit-in-jabalpur.html">Jabalpur</a>
+  </div>
+  </div> 
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<h1 class="head1">Madhya Pradesh: A Land of Ancient Pilgrimage...</h1>
+<hr>
+<br>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+ <video width="700" controls>
+<source src="G:/webdev/mp_tourism.mp4" type="video/mp4">
+</video>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="G:/webdev/images/mp1.jpg" style="width:1000px;height:500px;">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="G:/webdev/images/mp3.jpg" style="width:1000px;height:500px;">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="G:/webdev/images/mp4.jpg" style="width:1000px;height:500px;">
+  <div class="text"></div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 class="head1"><b>What To Do In Madhya Pradesh</b></h1>
+<p class="p2"><b>Madhya Pradesh is a state of vivid culture, historical places, hill stations, and rich wildlife experiences. With three world heritage sites, plenty of national parks, and wildlife sanctuaries, it is a true adventure destination of central India which has something for everyone. Best way to explore the wildlife of the state is to opt for jeep safari available at national parks. If your wanderlust doesn't just satisfy there then the historical monuments and temples will surely fill you with so many incredible memories. So, plan your trip to the heartland of India and discover local heritage, food, culture, and adventure at its best.</b></p>
+<div class="row">
+  <div class="column">
+    <a href="http://www.mptourism.com/destinations-tourist-places-to-visit.html"><img src="G:/webdev/images/todo1.png" style="width:80%"></a>
+  </div>
+  <div class="column">
+    <a href="http://www.mptourism.com/holiday-packages-and-trip-planner.html"><img src="G:/webdev/images/todo3.png" style="width:80%"></a>
+  </div>
+  <div class="column">
+    <a href="http://www.mptourism.com/culture-of-madhya-pradesh.html"><img src="G:/webdev/images/todo4.png" style="width:80%"></a>
+  </div>
+</div>
+<br>
+<hr>
+</body>
+</html>

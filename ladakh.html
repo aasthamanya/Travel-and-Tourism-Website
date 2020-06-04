@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ladakh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="G:/webdev/mystyle.css">
+</head>
+<body>
+<h1 align="center" class="head1">LADAKH:'A Beauty To Behold'</h1>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="G:/webdev/images/ladakh_16.jpg" style="width:100%">
+  <div class="text"> When exploring Ladakh, Be traveler not Tourist.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="G:/webdev/images/IMG_5387.jpg" style="width:100%">
+  <div class="text">“He who climbs upon the highest mountains laughs at all tragedies, real or imaginary.”</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="G:/webdev/images/ladakh_14.jpg" style="width:100%">
+  <div class="text">wander where the wifi is weak.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<p class="p1"><i>Get drunk on the idea of spending your holiday exploring the many flavours of nature, landscape, remote settlements and village lifestyle.
+Ladakh, known for its moonscape has so much to satisfy your appetite for learning about diverse culture, erratic weather and defying routine life.
+Extending from Kunlun Mountain Range to Great Himalayan Mountains, Ladakh is one of three main regions of Jammu & Kashmir state.
+It extends in an area of 86, 408 sq kms of which mostly remains uninhabited or sparsely inhabited.
+Ladakh shares similarity of landscape and culture with Tibet and has a large population of Shia Muslims as well.</i></p>
+<h1 class="head1">IRRESISTIBLE TASTEBUDS</h1>
+<div class="responsive">
+  <div class="gallery">
+      <img src="G:/webdev/images/ladakh_1.jpg" width="600" height="400">
+    <div class="desc">Skew</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="G:/webdev/images/ladakh_2.jpg" width="600" height="400">
+    <div class="desc">Paba</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="G:/webdev/images/ladakh_3.jpg" width="600" height="400">
+    <div class="desc">gur gur cha</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="G:/webdev/images/ladakh_4.jpg" width="600" height="400">
+    <div class="desc">Thukpa</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<p class="p2">Another dumpling soup made in the same way as the Chutagi but shaped like really tiny thumb sized chapatis.
+The soup is delicious with the essence of all the different vegetables that are put into it.
+For a nonvegeterian skew mutton is most preferred and potatoes are a must to give it a nice flavour.
+The flour of Barley is roasted and kneaded in a little oil and eaten with some sugar.
+Another way to eat it is with Tangthur and Zathuk which is butter milk.
+Paba is mixed with Tangthur and other vegetables and eaten. A very healthy source of food.
+Gur Gur is the name of the instrument in which the tea is made. After churning the curd/ yogurt the butter that is left is used to make this tea.
+It is not sweet but delicious in the cold weather. The ingredients used to make this tea are butter, milk and tea powder, all of this is then put into the shaker.
+In English it is called Butter Tea and in Tibetan it is called Tsaza.
+Thukpa which is just noodle soup is also a Tibetan dish that is made is Ladakh.
+The flour is kneaded, the broth is cooked containing onion, tomato, garlic and other vegetables if veg and beef/ mutton if non-veg
+once it looks a little cooked the flour is rolled into thin strings and dropped into the boiling broth.</p>
+<h1 class="head1">FAMOUS PLACES</h1>
+<h3 class="head3">1.NUBRA VALLEY</h3>
+<img src=G:/webdev/images/ladakh_11.jpg class="imag">
+<p class="p2">Nubra Valley is replete with unexplored and lesser explored nature’s gem.
+The valley is undoubtedly for the adventurous souls who would like to push their endurance 
+limit for sighting some extraordinary places. The main sightseeing places and tourist attractions in Nubra Valley includes,
+Diskit Monastery, which is the largest and oldest Buddhist monastery in the valley; the tall statue of Maitreyi Buddha,
+and the desert of Hunder. Apart from this, Nubra has stunning hot springs in Panamik.
+Other two worth seeing places in Nubra Valley are Sumur and Turtuk.</p>
+<h3 class="head3">2.PANGONG LAKE</h3>
+<img src=G:/webdev/images/ladakh_10.jpg class="imag">
+<p class="p2">Pangong Lake is Ladakh’s most important tourist attraction.
+This azure stretch of endorheic lake is situated at a dizzying height of 4350 meter and 
+looks as if it is piece of heaven that fell on earth. Surrounded by barren mountains, this lake is 
+probably one of the most beautiful lakes in Ladakh. Pangong is a transboundary lake that is expanded
+between India and China for almost 134 kms.</p>
+<h3 class="head3">3.Phuktal Monastery</h3>
+<img src=G:/webdev/images/ladakh_12.jpg class="imag">
+<p class="p2>A trip to the famous Phuktal monastery will give you a surreal experience, giving an image
+as if it is stuck in the mountains. More or less, it appears to look like legos attached on the walls.
+The Phuktal monastery is located at the remote Lungnak Valley, south of Zanskar. And the uniqueness of this
+monastery is that the structure is built on the cliff. From here, the view is breathtaking;
+it gives a panoramic view of the adjoining mountains and lustrous greens and Lungnak River.</p>
+</body>
+</html>

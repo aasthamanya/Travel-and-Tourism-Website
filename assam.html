@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assam</title>
+<link rel="stylesheet" href="G:/webdev/mystyle2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="https://www.holidify.com/pages/food-of-assam-1336.html">Food</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Travel Guide
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="https://www.tourmyindia.com/hotelsinindia/guwahati-assam.html">Book hotels</a>
+    <a href="https://www.tourmyindia.com/states/assam/how-to-reach.html">how to reach</a>
+    <a href="https://www.tourmyindia.com/states/assam/top-tourist-attractions.html">Top attractions</a>
+  </div>
+  </div> 
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<h1 class="head1"><u>ASSAM : A Heavenly Abode... </u></h1>
+<div class="row">
+  <div class="column">
+<p class="p2"><b>Soothing beauty, offbeat tourists attractions, spiritual ambiance, the sacred river, humble people, and zealous culture, Assam boasts plenty of fascinating secrets. Being one of the Northeast India’s iconic seven sisters, a holiday in Assam is about witnessing a heady mix of history, culture, and nature at the same time. The state happens to be the land of many wildlife reserves, which are further home to the one-horned rhino, one of Assam's tourism best-known mascots.</b></p>
+</div>
+<div class="row">
+<div class="column">
+<p class="p2"><b>To be a part of the euphoric festival celebration; check out one of the kind nature phenomena - river island at Majuli; sample scrumptious Machor Tenga and Duck Roast; visit the oldest temple in the history of India; go boat cruising on Brahmaputra river; purchase traditional silk garment and raft over ferocious Jia Bhorali River.
+A heady mix of serenity, and spontaneity, Assam hangs on to the rest of the India by a thin chicken neck (Siliguri Corridor).</b></p>
+</div>
+</div>
+<hr>
+<br>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+ <video width="70%" controls>
+<source src="G:/webdev/assam_tourism.mp4" type="video/mp4">
+</video>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="G:/webdev/images/assam_1.jpg" style="width:100%">
+  <div class="text">Assam has a diversified background and rich heritage.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="G:/webdev/images/assam_6.jpg" style="width:100%">
+  <div class="text">Discover the timeless beauty of India's one horned rhinoceros capital.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="G:/webdev/images/assam_2.jpg" style="width:100%">
+  <div class="text">Tea plantations are worth a visit.</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br>
+<h1 class="head3"><b>Things to do in Assam</b></h1>
+<hr>
+<p class="p1"><b>The state seems like a destination for history lovers too. Assam's historical attractions like Sivasagar, Udharband, Barak Valley and Tezpur bespoke the chapters of the past and have stood all test of time. Various historical sites in Assam shares space with the jungles too. Going by the facts, the state has impressive 35% forest cover, some of which are even listed in world heritage sites. The highly acclaimed jungles in Assam are Kaziranga and Manas National Park. These highly acclaimed sites hold a decent population of rhinos, elephants, buffaloes, spectacular birds, and deer.
+Assam tourism offers places to visit like historical monuments, temples and sightseeing places like kamakhya Temple, Umananda Temple, Dipor Bil, Madan Kamdev, Rang Ghar, Agnigarh. For nature lovers, Assam has national parks like Kaziranga National Park, Pobitora Wildlife Sanctuary, Manas National Park to name a few</b></p>
+<br>
+<div class="main">
+<div class="row1">
+  <div class="column1">
+    <div class="content">
+      <img src="G:/webdev/images/assam_a.jpg" style="width:100%">
+      <h3><a href="https://www.tourmyindia.com/states/assam/wildlife.html">Wildlife</a></h3>
+      <p>Assam is well known among the many wildlife holiday destinations in India.famous wildlife sanctuary of the place is the Kaziranga National Park.</p>
+    </div>
+  </div>
+  <div class="column1">
+    <div class="content">
+    <img src="G:/webdev/images/assam_b.jpg" style="width:100%">
+      <h3><a href="https://www.tourmyindia.com/states/assam/pilgrimage.html">Pilgrimage</a></h3>
+      <p>When it comes to religious tourism, Assam is such a place that crosses everyone’s mind owing to its several pilgrimage destinations.</p>
+    </div>
+  </div>
+  <div class="column1">
+    <div class="content">
+    <img src="G:/webdev/images/assam_c.jpg" style="width:100%">
+      <h3><a href="https://www.tourmyindia.com/states/assam/hill-stations.html">Hill Stations</a></h3>
+      <p>Assam is a state that is blessed with scenic beauty and natural heritage.It counts among the many nature tourism places in the country.</p>
+    </div>
+  </div>
+  <div class="column1">
+    <div class="content">
+    <img src="G:/webdev/images/assam_d.jpg" style="width:100%">
+      <h3><a href="https://www.tourmyindia.com/states/assam/adventure-tourism.html">Adventure</a></h3>
+      <p>The magnificent topography of the state with fast flowing rivers and exotic hilly places are apt for some exciting and pulse racing sports.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+<br>
+<hr>
+</body>
+</html>

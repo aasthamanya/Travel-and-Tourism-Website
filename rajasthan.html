@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rajasthan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="G:/webdev/mystyle1.css">
+</head>
+<body>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="https://www.holidify.com/pages/food-of-rajasthan-389.html">Food</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">places to visit
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="https://erajasthantourism.net/places-to-visit-in-bikaner/">Bikaner</a>
+    <a href="https://www.erajasthantourism.net/places-to-visit-in-jodhpur/">Jodhpur</a>
+    <a href="https://www.erajasthantourism.net/places-to-visit-in-udaipur/">Udaipur</a>
+<a href="https://erajasthantourism.net/places-to-visit-in-jaisalmer/">Jaisalmer</a>
+  </div>
+  </div> 
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<h1 align="center" class="head1">RAJASTHAN:'The Land of Cultures'</h1>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+ <video width="700" controls>
+<source src="G:/webdev/RajasthanTourism.mp4" type="video/mp4">
+</video>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="G:/webdev/images/rajasthan_f.jpg" style="width:100%">
+  <div class="text">Let loose yourself in the ocean of colors, funfrolic and excitement</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="G:/webdev/images/Rajasthan_camel.jpg" style="width:100%">
+  <div class="text">Discover the timeless beauty of India's desert capital.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<hr>
+<p class="p2"><b>The land of Maharajas, lakes, grace, emotions, adventure, and vibrancy, Rajasthan with its royal essence welcomes you with all its heart. "Khamma Ghani", it says, and has the beauty that never betrays. Rajasthan is a magical land full of cheerfulness and quintessential charm. In the era where development has taken over, the state remains truthful to its roots and customs. In every street you will find a new ritual, in every face, you'll see an acquaintance. It is a land that showers you with love and a melting pot of multiple religions that is meant to be visited once a lifetime.
+Realizing its heritage richness and eyeful aura, more and more people are booking their tours to this heavenly destination leading to an increase in Rajasthan Tourism. Be an influential part of this rise, Book your tours now!
+"Padharo Mahrey Des," Welcome to Our Land; it invites you to unravel its opulence and unbeatable grandeur.</b></p>
+<hr>
+<h1 class="head1">Things to do in Rajasthan...</h1>
+<br>
+<div class="responsive">
+  <div class="gallery">
+      <img src="G:/webdev/images/tiger.png">
+    <div class="desc"><b><a href="https://www.erajasthantourism.net/wildlife/" style="color:white; font-size:20px;">wildlife</a></b></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+      <img src="G:/webdev/images/hawamahal.jpg">
+    <div class="desc"><b><a href="https://www.erajasthantourism.net/forts/" style="color:white; font-size:20px;">Forts</a></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="G:/webdev/images/rajasthan_a.jpg">
+    <div class="desc"><b><a href="https://www.erajasthantourism.net/lakes/" style="color:white; font-size:20px;">Lakes</a></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="G:/webdev/images/rajasthan_e.jpg">
+    <div class="desc"><b><a href="https://www.erajasthantourism.net/fairs-and-festivals/" style="color:white; font-size:20px;">Rajasthani Festivals</a></b></div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<br>
+<div class="footer">
+  <p>PADHARO MAHRO DESH!</p>
+</div>
+</body>
+</html>

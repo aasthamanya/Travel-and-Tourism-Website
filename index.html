@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="G:/webdev/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<style>
+
+.change-content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color:#00b894;
+}
+
+@keyframes changetext{
+	0%{content: "LADAKH";}
+	25%{content: "RAJASTHAN";}
+	50%{content: "MADHYA PRADESH";}
+	80%{content: "ASSAM";}
+	100%{content: "KERALA";}
+	
+
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+	<div class="logo"><h1 class="animated infinite heartBeat delay-5s">INCREDIBLE INDIA!!</h1> </div>
+	<!--<div class="menu">
+		<a href="#" target="_blank">HOME</a>
+		<a href="#">GALLERY</a>
+		<a href="#" target="_blank"class="sub-nav">ABOUT
+				<li><a>LADAKH</a></li>
+				<li><a>RAJASTHAN</a></li>
+				<li><a>MADHYA PRADESH</a></li>
+				<li><a>ASSAM</a></li>
+				<li><a>KERALA</a></li>
+			</a>
+		<a href="#">CONTACT</a>
+
+
+	</div>-->
+	<ul>
+		<li><a>HOME</a></li>
+		<li><a href="G:/webdev/gallery.html">GALLERY</a></li>
+		<li><a>ABOUT</a>
+			<ul>
+				<li><a href="G:/webdev/ladakh.html">LADAKH</a></li>
+				<li><a href="G:/webdev/rajasthan.html">RAJASTHAN</a></li>
+				<li><a href="G:/webdev/madhyapradesh.html">MADHYA PRADESH</a></li>
+				<li><a href="G:/webdev/assam.html">ASSAM</a></li>
+				<li><a href="G:/webdev/kerala.html">KERALA</a></li>
+			</ul>
+
+
+
+		</li>
+		<li><a href="G:/webdev/contact.html">CONTACT</a></li>
+	</ul>
+
+</nav>
+	<main>
+	<section>
+		<h3>WELCOME TO INDIA</h3>
+		<h1>DO VISIT<span class="change-content">	</span></h1>
+		<p>"India once is not enough"</p>
+<p>To other countries, you may go as a tourist, but to India, you come as a pilgrim.</p>
+
+	</section>
+
+	</main>
+
+
+</header>
+</body>
+</html>

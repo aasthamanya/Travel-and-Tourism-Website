@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float:left;
+  margin-left:190px;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 80%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: white;
+font-size:20px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color:#555;
+}
+.imag
+{
+width:250px;
+height:450px;
+border:2px solid black;
+padding:30px;
+}
+.b1
+{background-image:url('G:/webdev/images/flower.jpg');background-size:cover;}
+</style>
+</head>
+<body class="b1">
+
+<h1 align="center" style="color:black;">Meet The Team...</h1>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="imag" src="G:/webdev/images/aastha.png" style="width:100%">
+      <div class="container">
+        <h2>Aastha Manya</h2>
+        <p class="title">Company : Travel To Unravel</p>
+        <p style="font-size:20px; color:white;">A photography enthusiast and your travel guide.</p>
+        <a href="http://www.gmail.com" style="color:white; font-size:20px;">manyaaastha@gmail.com</a>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img class="imag" src="G:/webdev/images/aakansha.png" style="width:100%">
+      <div class="container">
+        <h2>Aakansha Mishra</h2>
+        <p class="title">Company : Travel To Unravel</p>
+        <p style="font-size:20px; color:white;">Design enthusiast and your travel guide</p>
+        <a href="http://www.gmail.com" style="color:white; font-size:20px;">aakanshamishra@gmail.com</a>
+        <p><button class="button" onclick="http://www.gmail.com">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
